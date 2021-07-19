@@ -189,3 +189,16 @@ class Plugin extends PluginBase {
     
 }
 ```
+
+## Override a PaymentProvider view in your theme
+
+To override the default view of a `PaymentProvider` in your theme, you can duplicate the view in your theme by respecting this path: 
+
+`/themes/{yourtheme}/partials/mall/payments/{paymentidentifier}/{view}.htm` 
+
+exemple for Stripe: 
+
+Copie the `form.htm` file in your theme folder: 
+
+`/themes/{yourtheme}/partials/mall/payments/stripe/form.htm` 
+
